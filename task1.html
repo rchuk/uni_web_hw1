@@ -3,65 +3,67 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Task 1</title>
+    <title>Create teacher profile</title>
 </head>
 <body>
-    <h1>Create teacher profile</h1>
-    <form id="teacher_add_form">
-        <table>
-            <tr>
-                <td><label for="full_name">Full name</label></td>
-                <td><input type="text" id="full_name" name="full_name" required/></td>
-            </tr>
-            <tr>
-                <td><label>Gender</label></td>
-                <td>
-                    <label for="gender_male">Male</label>
-                    <input type="radio" id="gender_male" name="gender" value="Male">
-                    
-                    <label for="gender_female">Female</label>
-                    <input type="radio" id="gender_female" name="gender" value="Female">
+    <article id="teacher_profile">
+        <h1>Create teacher profile</h1>
+        <form id="teacher_add_form">
+            <table>
+                <tr>
+                    <td><label for="full_name">Full name</label></td>
+                    <td><input type="text" id="full_name" name="full_name" required/></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <label for="gender_male">Male</label>
+                        <input type="radio" id="gender_male" name="gender" value="Male">
 
-                    <label for="gender_other">Other</label>
-                    <input type="radio" id="gender_other" name="gender" value="Other">
-                </td>
-            </tr>
-            <tr>
-                <!-- NOTE: Using JavaScript date of brith can be constrained with "max" attribute 
-                     in order not to be later than today and to avoid sending data for validation to the server.
-                -->
-                <td><label for="date_of_birth">Date of birth</label></td>
-                <td><input type="date" id="date_of_birth" name="date_of_birth" required/></td>
-            </tr>
-            <tr>
-                <td><label for="email">Email</label></td>
-                <td><input type="email" id="email" name="email" required/></td>
-            </tr>
-            <tr>
-                <td><label for="phone_number">Phone number</label></td>
-                <td><input type="tel" id="phone_number" name="phone_number" required/></td>
-            </tr>
-            <div>
-                <td><label for="background_color">Background color</label></td>
-                <td><input type="color" id="background_color" name="background_color" value="#AAAAAA" required/></td>
-            </tr>
-            <tr>
-                <td><label for="country">Country</label></td>
-                <td><input type="text" id="country" name="country" required/></td>
-            </tr>
-            <tr>
-                <td><label for="city">City</label></td>
-                <td><input type="text" id="city" name="city" required/></td>
-            </tr>
-            <tr>
-                <td><label for="comment">Comment</label></td>
-                <td><textarea id="comment" name="comment" form="teacher_add_form" rows="6"></textarea></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" id="submit" name="submit"/></td>
-            </tr>
-        </table>
-    </form>
+                        <label for="gender_female">Female</label>
+                        <input type="radio" id="gender_female" name="gender" value="Female">
+
+                        <label for="gender_other">Other</label>
+                        <input type="radio" id="gender_other" name="gender" value="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <!-- NOTE: Using JavaScript date of brith can be constrained with "max" attribute 
+                        in order not to be later than today and to avoid sending data for validation to the server.
+                    -->
+                    <td><label for="date_of_birth">Date of birth</label></td>
+                    <td><input type="date" id="date_of_birth" name="date_of_birth" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="phone_number">Phone number</label></td>
+                    <td><input type="tel" id="phone_number" name="phone_number" required/></td>
+                </tr>
+                <div>
+                    <td><label for="background_color">Background color</label></td>
+                    <td><input type="color" id="background_color" name="background_color" value="#AAAAAA" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><input type="text" id="country" name="country" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td><input type="text" id="city" name="city" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="comment">Comment</label></td>
+                    <td><textarea id="comment" name="comment" form="teacher_add_form" rows="6"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" id="submit" name="submit"/></td>
+                </tr>
+            </table>
+        </form>
+    </article>
 </body>
 </html>
